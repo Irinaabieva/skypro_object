@@ -7,10 +7,11 @@ public class Main {
         Book prorok = new Book("Пророк", pushkin, 1987);
         System.out.println(prorok.getName()+" " + prorok.getYear()+ " " + prorok.getAuthor());
         Author joan = new Author("Джоан", "Роулинг");
-        Book harryPotter = new Book("Гарри Поттер", pushkin, 2001);
+        Book harryPotter = new Book("Гарри Поттер", joan, 2001);
         System.out.println(harryPotter.getName()+" " + harryPotter.getYear()+ " " + harryPotter.getAuthor());
+        Book prorok1 = new Book("Пророк", pushkin, 1987);
 
-        prorok.setYear(1092);
+        System.out.println(prorok.equals(prorok1));
         System.out.println("prorok.getYear() = " + prorok.getYear());
     }
 
