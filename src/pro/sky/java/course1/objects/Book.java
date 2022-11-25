@@ -1,8 +1,8 @@
 package pro.sky.java.course1.objects;
 
 public class Book {
-    private String name;
-    private Author author;
+    private final String name;
+    private final Author author;
     private int year;
 
     public Book(String name, Author author, int year) {
@@ -25,5 +25,10 @@ public class Book {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return name + author + year;
     }
 }
